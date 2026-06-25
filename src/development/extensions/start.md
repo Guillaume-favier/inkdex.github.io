@@ -28,7 +28,7 @@ This repo is a template for a Paperback extension with all of the classic tools 
 - a `tsconfig.json` file with all of our typescript settings.
 - a `.oxfmtrc.json` and `.oxlintrc.json` to ensure that the code has the same formatting and style.
 - Other files and directories that do not interest us here, like `README.md`, `LICENSE`, `.gitignore`, `.github/`, `.husky/` ...
-- but all the interesting files are in `src/`. In there, you will see two dirs, a `src/test` and `ContentTemplate`  directory.
+- but all the interesting files are in `src/`. In there, you will see two dirs, a `src/test` and `ContentTemplate` directory.
   - the `src/test` directory contains all the code to test that our extension(s) are running correctly and that there are no major issues
   - the `src/ContentTemplate` is where we will spend most of our time, it's the home of the extension but we will soon change it's name
 
