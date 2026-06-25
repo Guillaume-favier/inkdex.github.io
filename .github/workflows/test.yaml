@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   test:
-    runs-on: ovh
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4

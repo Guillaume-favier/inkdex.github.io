@@ -15,7 +15,7 @@ concurrency:
 jobs:
   build-deploy:
     name: Build Website and Deploy to GitHub Pages
-    runs-on: ovh
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4
