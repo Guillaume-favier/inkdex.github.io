@@ -1,5 +1,14 @@
-<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
-<!-- Copyright © 2025 Inkdex -->
+---
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright © 2026 Inkdex
+
+prev:
+  text: "Development Guides"
+  link: "/development/"
+next:
+  text: "Your first Extension"
+  link: "/development/extensions/start"
+---
 
 # Extension Development
 
@@ -12,7 +21,7 @@ If you're reading this, it probably means you want to learn how to make an exten
 - A detailed look on advanced features.
 - And much more...
 
-# Before you begin...
+## Before you begin...
 
 Together, we will be making step by step an extension for Paperback, but we will be making one for Paperback version 0.9. I understand that 0.9 isn't avaliable for everyone (for now) but I will share a secret with you if you make a modmail on the [official paperback server](https://discord.com/invite/paperback) saying that you are a developper, sharing you github account or other proof, they might grant you the role : `TestFlight Bypass` then you can access the Beta release of Paperback 0.9.
 But if you don't code please don't bother asking them.
