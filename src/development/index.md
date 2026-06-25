@@ -11,5 +11,3 @@ next:
 ---
 
 # Development Guides
-
-Coming soon!
