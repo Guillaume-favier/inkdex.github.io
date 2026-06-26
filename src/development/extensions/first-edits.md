@@ -123,12 +123,11 @@ values and dictates exactly what the extension can and cannot do:
 
 - `NONE` -- The extension does nothing.
 - `CHAPTER_PROVIDING` -- The extension can read a chapter when asked to.
-- `PROGRESS_PROVIDING` -- Can retrieve the user's reading progress from a website
+- `PROGRESS_PROVIDING` -- Can manage the user's reading progress to/from a website
   (often requires the user to be logged in).
 - `DISCOVER_SECTION_PROVIDING` -- Can provide a homepage for the website in the Home
   section.
-- `MANAGED_COLLECTION_PROVIDING` -- Lets you set up a Managed Collection that syncs
-  reading progress to and from the website (also often requires login).
+- `MANAGED_COLLECTION_PROVIDING` -- Lets you set up a Managed Collection that syncs to and from the website, where it can update reading lists, shelves, categories, etc. (also often requires login).
 - `CLOUDFLARE_BYPASS_PROVIDING` -- The extension can use the built-in CloudFlare
   bypassing tools.
 - `SETTINGS_FORM_PROVIDING` -- The extension exposes a custom settings page called the

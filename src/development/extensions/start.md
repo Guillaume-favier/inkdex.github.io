@@ -74,4 +74,6 @@ On your phone, add an extension repository using that address, for example
 `http://192.168.1.105:8080/`. You should see **ContentTemplate** available to download.
 That is your first extension, congratulations!
 
+---
+
 In the next guide, we will open up that extension and start editing it to make it our own.

@@ -6,8 +6,8 @@ prev:
   text: "First Edits"
   link: "/development/extensions/first-edits"
 next:
-  text: "Tooling"
-  link: "/development/tooling"
+  text: "Quirks and Tools"
+  link: "/development/extensions/quirks-and-tools"
 ---
 
 # Main.ts
@@ -40,12 +40,22 @@ This is also a good moment to rename all `ContentTemplate` references in the fil
 Use your editor's search-and-replace to swap them for your extension's name, which
 should match the name of its directory.
 
+At the end of the file you will see something like :
+
+```typescript
+export const ContentTemplate = new ContentTemplateExtension();
+```
+
+This is the true way for paperback to interact with your code, and the const should **ALWAYS** have the same name then your directory
+
 ## Capabilities
 
 As covered in [First Edits](/development/extensions/first-edits#capabilities), the
 capabilities you declare in `pbconfig.ts` determine which methods your class must
 implement. The table below is a quick reference, with full signatures for each
 capability listed underneath.
+
+But if you don't care, just can skip to the [next part](#what-does-this-means-for-us)
 
 ### Quick reference
 
@@ -132,3 +142,23 @@ getSearchResults(
 getSortingOptions?(query: SearchQuery<Metadata>): Promise<SortingOption[]>;
 getAdvancedSearchForm?(query: SearchQuery<Metadata>): Promise<AdvancedSearchForm>;
 ```
+
+## What does this means for us?
+
+Together, we will see how to build each kind of extension based on their capabilities.
+
+For example,
+
+- I want to build an extension just to see my favourite mangas or light novel -> `CHAPTER_PROVIDING` (to read the chapters)
+- I want people to discover those books from the homepage selection of the website -> `DISCOVER_SECTION_PROVIDING` (lets you show the homepage item in the Home tab of Paperback)
+- The website uses CloudFlare as protection and I can't access anything -> `CLOUDFLARE_BYPASS_PROVIDING`
+- I want people to search for titles -> SEARCH_RESULT_PROVIDING (for simple search, and maybe sorting and advanced filter search)
+- My extension is more and more complex and I want to let the user to decide how it works for them -> `SETTINGS_FORM_PROVIDING` (lets you make extension settings)
+- The website also allows you to connect to your account and remember when you left reading -> `PROGRESS_PROVIDING` (syncs per-title reading progress: chapter, rating, to your account)
+- The website lets you organize titles into lists -> `MANAGED_COLLECTION_PROVIDING` (syncs reading shelves like "Reading", "Completed", "On Hold" between Paperback and the website)
+
+And you can mix and match anything you want.
+
+---
+
+Later in the guide if we are talking about a capability that doesn't interset you, you will have links to skip this part
