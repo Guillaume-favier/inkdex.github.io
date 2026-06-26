@@ -41,6 +41,10 @@ export default [
             text: "First Edits",
             link: "/development/extensions/first-edits",
           },
+          {
+            text: "Main.ts",
+            link: "/development/extensions/main.ts",
+          },
         ],
       },
       {

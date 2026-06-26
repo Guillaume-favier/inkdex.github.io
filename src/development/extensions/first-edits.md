@@ -6,8 +6,8 @@ prev:
   text: "Your First Extension"
   link: "/development/extensions/start"
 next:
-  text: "Tooling"
-  link: "/development/tooling"
+  text: "Main.ts"
+  link: "/development/extensions/main.ts"
 ---
 
 # First Edits
