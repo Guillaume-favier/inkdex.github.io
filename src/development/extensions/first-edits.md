@@ -3,7 +3,7 @@
 # Copyright © 2026 Inkdex
 
 prev:
-  text: "Your first Extension"
+  text: "Your First Extension"
   link: "/development/extensions/start"
 next:
   text: "Tooling"

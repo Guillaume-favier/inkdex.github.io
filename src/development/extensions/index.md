@@ -6,7 +6,7 @@ prev:
   text: "Development Guides"
   link: "/development/"
 next:
-  text: "Your first Extension"
+  text: "Your First Extension"
   link: "/development/extensions/start"
 ---
 

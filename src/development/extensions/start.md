@@ -10,7 +10,7 @@ next:
   link: "/development/extensions/first-edits"
 ---
 
-# Your first Extension
+# Your First Extension
 
 If you are here, I hope you can use git and npm, (if not, download it [here](https://git-scm.com/install/) and [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
 

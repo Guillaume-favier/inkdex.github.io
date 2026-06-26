@@ -31,6 +31,17 @@ export default [
       {
         text: "Extensions",
         link: "/development/extensions",
+        collapsed: true,
+        items: [
+          {
+            text: "Your First Extension",
+            link: "/development/extensions/start",
+          },
+          {
+            text: "First Edits",
+            link: "/development/extensions/first-edits",
+          },
+        ],
       },
       {
         text: "Website",
