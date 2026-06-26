@@ -12,33 +12,45 @@ next:
 
 # Extension Development
 
-If you're reading this, it probably means you want to learn how to make an extension for Paperback. Awesome! You've come to the right place. This guide will teach you things such as:
+So you want to build an extension for Paperback - great, you're in the right place.
+This guide will walk you through:
 
-- Making the base of an extension from scratch.
-- Understanding what does an extension needs to do and what it can do.
-- Using the right tool, and how to debug.
-- How to organize the code of your extension.
-- A detailed look on advanced features.
-- And much more...
+- Setting up an extension from scratch.
+- Understanding what an extension needs to do, and what it is allowed to do.
+- Using the right tools and debugging effectively.
+- Organizing your extension's codebase.
+- A deep dive into advanced features.
 
 ## Before you begin
 
 ### About Paperback 0.9
 
-Together, we will be making step by step an extension for Paperback, but we will be making one for Paperback version 0.9. I understand that 0.9 isn't available for everyone but you can learn how to join it on the [FAQ of the Inkdex Discord Server](https://discord.com/channels/965890377896845352/1361230107632599192).
+Throughout this guide, we will be building an extension for **Paperback 0.9** step by step.
+Note that 0.9 is not yet available to everyone, but you can find out how to join the beta on the
+[Inkdex Discord Server FAQ](https://discord.com/channels/965890377896845352/1361230107632599192).
 
-### Programming language prerequisite
+### TypeScript prerequisite
 
-Also, we will be coding in TypeScript, using Npm as a packet manager. If you don't know how to code in TypeScript or you have only coded in JavaScript please follow those resources
+All code in this guide is written in **TypeScript**, using **npm** as a package manager.
+If you are not yet comfortable with TypeScript, the following resources are a good starting point:
 
-- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- [JavaScript.info](https://javascript.info/), if you don't know where to start because you know nothing about programming in JS, it's the place to be. Also, if you are not comfortable with async/await or Promises, review JavaScript fundamentals first.
+- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) —
+  the official reference, covering the language from the ground up.
+- [JavaScript.info](https://javascript.info/) — if you are new to JavaScript entirely,
+  start here. Make sure you are comfortable with `async`/`await` and Promises before
+  moving on, as they are used extensively throughout.
 
 ### Web interaction prerequisite
 
-We will also be getting some information from websites using either REST API or some scrapping (using Cheerio). Keep in mind that Paperback use some custom functions so that we don't have to deal with CloudFlare protections by ourselves, so you need to learn the key consepts but the execution will be detailed in specific guides
+Extensions retrieve data from websites using either a **REST API** or **HTML scraping**
+(via Cheerio). Paperback provides custom helpers to handle CloudFlare protections for you,
+so you do not need to deal with that directly, but you do need to understand the underlying
+concepts:
 
-- [RestAPITutorial.com](https://www.restapitutorial.com/)
-- [Cheerio.js.org](https://cheerio.js.org/docs/intro/)
+- [RestAPITutorial.com](https://www.restapitutorial.com/) — a practical introduction to REST APIs.
+- [Cheerio.js.org](https://cheerio.js.org/docs/intro/) — documentation for the HTML parsing library used in extensions.
 
-To be clear once again, this guide will not show you how to "reverse engineer" a website. If you don't know how to do it you can find a lot of resources at [pptr.dev](https://pptr.dev/guides/what-is-puppeteer) we will not be covering this here, you need to know witch endpoint returns what etc...
+> **Note:** This guide does not cover how to reverse-engineer a website
+> (i.e. figuring out which endpoints return what data, or how to intercept requests).
+> That knowledge is a prerequisite. If you need to build it up,
+> [pptr.dev](https://pptr.dev/guides/what-is-puppeteer) and browser DevTools are good places to start.
