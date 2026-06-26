@@ -53,7 +53,7 @@ Working directory: /home/user/template-extensions
 ✔ Generate Versioning File [3ms]
 ✔ Generate Homepage [2ms]
 Server running at http://127.0.0.1:8080/
-Server running at http://192.168.1.105:8080/
+Server running at http://192.168.1.xx:8080/
 
 For a list of commands do h or help
 [23:24:33:0115]

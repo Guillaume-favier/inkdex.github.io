@@ -25,9 +25,7 @@ If you're reading this, it probably means you want to learn how to make an exten
 
 ### About Paperback 0.9
 
-Together, we will be making step by step an extension for Paperback, but we will be making one for Paperback version 0.9. I understand that 0.9 isn't available for everyone (for now) but I will share a secret with you if you make a modmail on the [official paperback server](https://discord.com/invite/paperback) saying that you are a developer, sharing you GitHub account or other proof, they might grant you the role : `TestFlight Bypass` then you can access the Beta release of Paperback 0.9.
-But if you don't code please don't bother asking them.
-But if you already code a bit and think "Oh, I don't want to bother them..." please think again, they are glad to help you, Paperback wouldn't exist if people all around the world didn't contribute to this project, this is a great learning opportunity.
+Together, we will be making step by step an extension for Paperback, but we will be making one for Paperback version 0.9. I understand that 0.9 isn't available for everyone but you can learn how to join it on the [FAQ of the Inkdex Discord Server](https://discord.com/channels/965890377896845352/1361230107632599192).
 
 ### Programming language prerequisite
 
