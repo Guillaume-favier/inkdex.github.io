@@ -46,7 +46,7 @@ export default [
             link: "/development/extensions/main.ts",
           },
           {
-            text: "Quircks and Tools",
+            text: "Quirks and Tools",
             link: "/development/extensions/quirks-and-tools",
           },
         ],
