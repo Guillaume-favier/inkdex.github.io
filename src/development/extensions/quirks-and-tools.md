@@ -25,8 +25,8 @@ Everything lives under **Settings → Developer**. You will find there the full 
 Inside any method of your extension class, you have access to the standard JavaScript console:
 
 ```typescript
-console.log("Fetched manga details for:", mangaId);   // DEBUG
-console.warn("No chapters found, returning empty list");  // WARN
+console.log("Fetched manga details for:", mangaId); // DEBUG
+console.warn("No chapters found, returning empty list"); // WARN
 console.error("Unexpected response shape:", response); // ERROR
 ```
 
@@ -95,6 +95,7 @@ a missing manga ID is not a warning, it is a broken state. Throw for broken stat
 log for everything else.
 
 A rule of thumb:
+
 - A method that **must** return something and cannot → `throw new Error(...)`
 - Something unexpected happened but you can still return a result → `console.warn(...)`
 - Something you just want to trace while developing → `console.log(...)`
