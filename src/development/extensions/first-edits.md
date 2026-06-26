@@ -74,8 +74,8 @@ It's not technically required, but it cost nothing to add it. If your website on
 > - Everyone: This source does not have any sort of adult content available. Each title within is assumed safe for all audiences
 > - Mature: This source MAY have mature content inside of it. Even if most content is safe, mature should be selected even if a small subset applies
 > - Adult: This source probably has straight up pornography available.
-> This rating helps us filter your source to users who have the necessary visibility rules toggled for their profile.
-> Naturally, only 'Everyone' sources will show up for users without an account, or without any mode toggles changed.
+>   This rating helps us filter your source to users who have the necessary visibility rules toggled for their profile.
+>   Naturally, only 'Everyone' sources will show up for users without an account, or without any mode toggles changed.
 >
 > (`@paperback/type/lib/impl/SourceInfo.d.ts:101`)
 
@@ -112,4 +112,3 @@ in Shinon's [pbconfig.ts](https://github.com/Catta1997/Sinon-Paperback-Extension
 #### Developers
 
 Again, it's an array of `SourceDeveloper` and the list will be shown on your repo website and in the app so only write what you are confortable of showing. You only need to provide a `name` but links are optional. It will only display one of the two links, and if you provided both it will choose the `website`. You can have multiple developers.
-
